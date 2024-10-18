@@ -31,6 +31,15 @@ while exitbutton != "0":
         print("Input must be numeric")
         continue
 
+    # Checking for special characters. Need to learn how to use try except but this will do for now LOL
+    elif "!" in diameter or "@" in diameter or "#" in diameter or "$" in diameter or "%" in diameter or\
+    "^" in diameter or "&" in diameter or "*" in diameter or "(" in diameter or ")" in diameter or "-" in diameter\
+        or "_" in diameter or "+" in diameter or "=" in diameter or "~" in diameter or "`" in diameter or "{" in diameter\
+        or "}" in diameter or "[" in diameter or "]" in diameter or ":" in diameter or ";" in diameter or "'" in diameter\
+        or ">" in diameter or "<" in diameter or "," in diameter or "?" in diameter or "/" in diameter or "|" in diameter:
+        print("No special characters!")
+        continue
+
     # Ensures input is not null
     elif diameter == "" or diameter == " ":
         print("Please enter the diameter of the pizza.")
